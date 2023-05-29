@@ -10,5 +10,15 @@ package challenges
  */
 
 fun sortedSquares(list: List<Int>): List<Int> {
-    return mutableListOf()
+  var newList = mutableListOf<Int>();
+
+  for(i in list) {
+    newList.add(i * i)
+  }
+
+  for(i in newList) {
+    println(i)
+  }
+
+  return newList
 }
